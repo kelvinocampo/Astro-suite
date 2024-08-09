@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/Cursos background.jpg"); 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+.title h1 {
+    margin: 0;
+    color: white;
+}
+.logo img {
+    width: 50px;
+    height: 50px; 
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+#logo {
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;;
+}
+input{
+    width: 34vw;
+    padding: 10px;
+    outline: none;
+    border: 5px solid #000000;
+    font-weight: 600;
+}
+.filtro{
+    display: none;
+}
+.cursos {
+    padding: 20px;
+}
+
+.cursos h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 200px;
+    overflow: auto;
+    max-height: 184px;
+}
+
+.curso h1 {
+    font-size: 18px;
+    color: #000; 
+}
+.curso p {
+    font-size: 14px;
+    color: #000; 
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container
+{
+    display: flex;
+}

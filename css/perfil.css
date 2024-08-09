@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/perfil.png"); 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+.title h1 {
+    margin: 0;
+}
+.logo img {
+    width: 50px;
+    height: 50px; 
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+#logo {
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.editar-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.cerrar-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.editar-button:hover {
+    background-color: #999;
+}
+
+.cerrar-button:hover {
+    background-color: #999;
+}
+
+.cursos {
+    padding: 20px;
+}
+
+.cursos h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #ffffff; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 200px;
+    overflow: auto;
+    max-height: 184px;
+    text-decoration: none;
+}
+
+.curso h1 {
+    font-size: 18px;
+    color: #000000; 
+}
+
+.curso p {
+    font-size: 14px;
+    color: #000; 
+}
+
+.curso a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.curso a:hover {
+    text-decoration: underline;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
