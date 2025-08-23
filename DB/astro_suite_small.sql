@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS `astro_suite` 
-  DEFAULT CHARACTER SET utf8mb4 
-  COLLATE utf8mb4_general_ci;
+-- CREATE DATABASE IF NOT EXISTS `astro_suite` 
+--   DEFAULT CHARACTER SET utf8mb4 
+--   COLLATE utf8mb4_general_ci;
 
-USE `astro_suite`;
+-- USE `astro_suite`;
 
 CREATE TABLE `administradores` (
   `doc_administrador` varchar(15) NOT NULL,
@@ -31,6 +31,15 @@ CREATE TABLE `cursos` (
 INSERT INTO `cursos` (`id_curso`, `nombre`, `descripcion`, `imagen`, `dificultad`, `test`) VALUES
 (8, 'Astrofísica Básica ', 'El curso de introducción a la astrofísica proporciona una visión general...', 'image/cursos/R (9).jpeg', 'facil', 'https://es.educaplay.com/recursos-educativos/'),
 (10, 'Curso de Astronomía Observacional', 'Este curso de Astronomía Observacional tiene como objetivo...', 'image/cursos/WhatsApp Image 2023-11-08 at 3.13.11 PM.jpeg', 'medio', 'https://quizlet.com/co/700034517/objetos-mess');
+
+CREATE TABLE `temas` (
+  `id_tema` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(45) DEFAULT NULL,
+  `descripcion` varchar(10000) DEFAULT NULL,
+  `imagen` varchar(100) DEFAULT NULL,
+  `pdf` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_tema`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=18;
 
 CREATE TABLE `cursos_temas` (
   `id_curso_tema` int(11) NOT NULL AUTO_INCREMENT,
@@ -78,15 +87,6 @@ CREATE TABLE `novedades` (
 INSERT INTO `novedades` (`id_novedad`, `nombre`, `descripcion`, `link`, `imagen`) VALUES
 (1, '18 descubrimientos astronómicos que nos han s', 'Este artículo presenta...', 'https://www.nationalgeographic.com.es/ciencia/18-descubrimientos...', 'image/novedad/descubren-como-se-alimenta-un-agujero-negro_d7ffce83_1280x724.jpg'),
 (2, 'Nuevos exoplanetas', 'Descubren 10 exoplanetas potencialmente habitables...', 'https://www.lasexta.com/noticias/ciencia-tecnologia/descubren-59-exoplanetas...', 'image/novedad/recreacion-planeta-tamano-similar-tierra.jpeg');
-
-CREATE TABLE `temas` (
-  `id_tema` int(11) NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(45) DEFAULT NULL,
-  `descripcion` varchar(10000) DEFAULT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
-  `pdf` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id_tema`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=18;
 
 -- (se mantienen los inserts de temas, resumidos aquí por espacio)
 
