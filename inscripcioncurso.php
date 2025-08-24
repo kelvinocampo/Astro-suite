@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "config.php";
+// session_start();
 include "conexion.php";
 if (!isset($_SESSION['correo'])) {
     header("Location: inicio_sesion.php");

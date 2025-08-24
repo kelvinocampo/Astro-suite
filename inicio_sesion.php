@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "config.php";
+// session_start();
 if (!empty($_SESSION['active'])) {
     header('location: inicio.php');
 } else {

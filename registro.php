@@ -1,3 +1,6 @@
+<?php
+require_once "config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +48,7 @@
             </form>
         </div>
         <?php
-            session_start();
+            // session_start();
             include "conexion.php";
                 if ($conexion->connect_error) {
                     die("Error de conexión: " . $conexion->connect_error);

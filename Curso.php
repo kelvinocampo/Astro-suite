@@ -1,3 +1,6 @@
+<?php
+require_once "config.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -40,7 +43,7 @@
                 <li><a href="Cursos.php">cursos</a></li>
                 <li><a href="informacion.php">Información</a></li>
                 <?php
-                session_start();
+                // session_start();
                 require_once "conexion.php";
 
                 if (isset($_SESSION['active']) && isset($_SESSION['nombre'])) {
